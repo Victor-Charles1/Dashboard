@@ -3,15 +3,39 @@
     padding: 0;
 }
 
-html{
+body{
+    gap: 0;
     padding-left: 15%;
     padding-right: 15%;
     background-color: rgb(41, 40, 40);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    grid-template-columns: 150px 1fr;
+    grid-template-areas: 
+        "sidebar header "
+        "sidebar  main ";
+    
 }
+
 
 .sideBar {
     background-color: rgb(5, 148, 184);
-    width: 200px;
     height: 100vh;
     color: aliceblue;
+    padding: 5%;
+    grid-area: sidebar;
+}
+
+header {
+    background-color: aliceblue;
+    grid-area: header;
+    margin: 0;
+    
+}
+
+main {
+    background-color: rgb(153, 43, 43);
+    grid-area: main;
+    height: calc(100vh - 100px);
 }
