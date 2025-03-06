@@ -3,37 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <header></header>
+    <header>
+        <div class="search-bar">
+            <img src="img/magnify.svg" alt="Search" class="search-icon" width="25px" height="25px">
+            <input type="text" >
+        </div>
+        <div class="user-info">
+            <img src="img/bell-ring.svg" alt="Notifications" class="notification-icon" width="25px" height="25px">
+            <img src="img/account.svg" alt="User Avatar" class="user-avatar" width="25px" height="25px">
+            <span class="username">Billy Bob</span>
+        </div>
+        <div class="welcome-message">
+            <img src="img/account.svg" alt="User Avatar" class="large-avatar" width="25px" height="25px">
+            <div>
+                <p>Hi there,</p>
+                <h2>Billy Bob (@bobby)</h2>
+            </div>
+        </div>
+        <div class="actions">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+        </div>
+    </header>
 
-    <section class="sideBar">
-        <div><strong>Dashboard</strong></div>
-        <div>Home</div>
-        <div>Profile</div>
-        <div>Messages</div>
-        <div>History</div>
-        <div>Tasks</div>
-        <div> Communities</div>
-        <div>Settings</div>
-        <div>Support</div>
-        <div>Privacy</div>
-        
-    </section>
+    <aside class="sidebar">
+        <h1>Dashboard</h1>
+        <ul>
+            <li>🏠 Home</li>
+            <li>👤 Profile</li>
+            <li>📨 Messages</li>
+            <li>🕓 History</li>
+            <li>📚 Tasks</li>
+            <li>🌍 Communities</li>
+        </ul>
+        <ul>
+            <li>⚙️ Settings</li>
+            <li>🆘 Support</li>
+            <li>🔐 Privacy</li>
+        </ul>
+    </aside>
 
     <main>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <section class="projects">
+            <h3>Your Projects</h3>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h4>Super Cool Project</h4>
+                    <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                    <div class="project-actions">
+                        <img src="img/star.svg" alt="Favorite" width="25px" height="25px">
+                        <img src="img/eye.svg" alt="Watch" width="25px" height="25px">
+                        <img src="img/share.svg" alt="Share" width="25px" height="25px">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4>Less Cool Project</h4>
+                    <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor.</p>
+                    <div class="project-actions">
+                        <img src="img/star.svg" alt="Favorite" width="25px" height="25px">
+                        <img src="img/eye.svg" alt="Watch" width="25px" height="25px">
+                        <img src="img/share.svg" alt="Share" width="25px" height="25px">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4>Impossible App</h4>
+                    <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                    <div class="project-actions">
+                        <img src="img/star.svg" alt="Favorite" width="25px" height="25px">
+                        <img src="img/eye.svg" alt="Watch" width="25px" height="25px">
+                        <img src="img/share.svg" alt="Share" width="25px" height="25px">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4>Easy Peasy App</h4>
+                    <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam.</p>
+                    <div class="project-actions">
+                        <img src="img/star.svg" alt="Favorite" width="25px" height="25px">
+                        <img src="img/eye.svg" alt="Watch" width="25px" height="25px">
+                        <img src="img/share.svg" alt="Share" width="25px" height="25px">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4>Ad Blocker</h4>
+                    <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis.</p>
+                    <div class="project-actions">
+                        <img src="img/star.svg" alt="Favorite" width="25px" height="25px">
+                        <img src="img/eye.svg" alt="Watch" width="25px" height="25px">
+                        <img src="img/share.svg" alt="Share" width="25px" height="25px">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4>Money Maker</h4>
+                    <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex.</p>
+                    <div class="project-actions">
+                        <img src="img/star.svg" alt="Favorite" width="25px" height="25px">
+                        <img src="img/eye.svg" alt="Watch" width="25px" height="25px">
+                        <img src="img/share.svg" alt="Share" width="25px" height="25px">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="announcements">
+            <h3>Announcements</h3>
+            <div class="announcement-card">
+                <div>
+                    <h4>Site Maintenance</h4>
+                    <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue.</p>
+                </div>
+                <div>
+                    <h4>Community Share Day</h4>
+                    <p>Nam vel lectus tincidunt, rutrum nulla eu, omare libero. Aliquam dictum accumsan porttitor.</p>
+                </div>
+                <div>
+                    <h4>Updated Privacy Policy</h4>
+                    <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="trending">
+            <h3>Trending</h3>
+            <div class="trending-card">
+                <div class="trending-item">
+                    <img src="img/account.svg" alt="User Avatar" width="25px" height="25px">
+                    <div>
+                        <p>@tegan</p>
+                        <p>World Peace Builder</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <img src="img/account.svg" alt="User Avatar" width="25px" height="25px">
+                    <div>
+                        <p>@morgan</p>
+                        <p>Free, Man with a plan </p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <img src="img/account.svg" alt="User Avatar" width="25px" height="25px">
+                    <div>
+                        <p>@kendall</p>
+                        <p>Life </p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <img src="img/account.svg" alt="User Avatar" width="25px" height="25px">
+                    <div>
+                        <p>@alex</p>
+                        <p>Something interesting</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    
 </body>
 </html>
